@@ -13,6 +13,21 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
+            android:name=".app.ui.welcome.BluWelcomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".app.ui.preLogin.BluPreLoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Blu">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".app.ui.splashScreen.BluSplashScreenActivity"
             android:exported="true">
             <intent-filter>

@@ -1,14 +1,14 @@
 <resources>
     <!-- Base application theme. -->
     <style name="Theme.Blu" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="windowSplashScreenBackground">@color/blu_primary</item>
+        <item name="windowSplashScreenBackground">@color/blu_primary_2</item>
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/blu_primary</item>
+        <item name="colorPrimaryVariant">@color/blu_primary_2</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/blu_primary</item>
+        <item name="colorSecondaryVariant">@color/blu_primary_2</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
@@ -17,9 +17,9 @@
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <!-- Set the splash screen background, animated icon, and animation duration. -->
-        <item name="windowSplashScreenBackground">@color/blu_primary</item>
+        <item name="windowSplashScreenBackground">@color/blu_primary_2</item>
 
-        <item name="windowSplashScreenIconBackgroundColor">@color/blu_primary</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/blu_primary_2</item>
 
         <item name="windowSplashScreenAnimationDuration">3000</item>
         <!-- Set the theme of the Activity that directly follows your splash screen. -->
