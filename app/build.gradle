@@ -8,7 +8,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.bcadigital.blu"
+        applicationId "com.bcadigital.blu.dev"
         minSdk 23
         targetSdk 33
         versionCode 1
@@ -46,6 +46,7 @@ android {
 //            resValue "string", "app_name", "blu"
 //        }
 //    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

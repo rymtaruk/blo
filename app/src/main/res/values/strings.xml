@@ -2,4 +2,5 @@
     <string name="app_name">blu</string>
     <string name="splash_desc">BCA Digital terdaftar dan diawasi oleh Otoritas Jasa Keuangan.\n\nBCA Digital merupakan peserta penjaminan LPS.\n\nblubybcadigital.id</string>
     <string name="halo_name">Halo, %s</string>
+    <string name="btn_fees_rates"><u>Fees &amp; Rates</u></string>
 </resources>

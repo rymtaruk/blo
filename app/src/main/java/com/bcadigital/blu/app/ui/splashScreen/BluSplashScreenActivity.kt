@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.bcadigital.blu.app.ui.preLogin.BluPreLoginActivity
+import com.bcadigital.blu.app.ui.welcome.BluWelcomeActivity
 import com.bcadigital.blu.databinding.ActivityBluSplashScreenBinding
 
 @SuppressLint("CustomSplashScreen")
@@ -26,7 +26,8 @@ class BluSplashScreenActivity : AppCompatActivity() {
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
-            startActivity(Intent(this, BluPreLoginActivity::class.java))
-        },1000)
+            startActivity(Intent(this, BluWelcomeActivity::class.java))
+            finish()
+        },700)
     }
 }
