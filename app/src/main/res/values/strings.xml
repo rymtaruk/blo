@@ -3,4 +3,8 @@
     <string name="splash_desc">BCA Digital terdaftar dan diawasi oleh Otoritas Jasa Keuangan.\n\nBCA Digital merupakan peserta penjaminan LPS.\n\nblubybcadigital.id</string>
     <string name="halo_name">Halo, %s</string>
     <string name="btn_fees_rates"><u>Fees &amp; Rates</u></string>
+    <string name="message_login_kita_mulai">Oke, kita mulai..\nMasukkan no. handphone kamu</string>
+    <string name="hint_login_no_handphone">No. Handphone</string>
+    <string name="btn_next">Lanjut</string>
+    <string name="message_otp_verification_number">Verifikasi nomor kamu</string>
 </resources>

@@ -1,7 +1,6 @@
 <resources>
     <!-- Base application theme. -->
     <style name="Theme.Blu" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="windowSplashScreenBackground">@color/blu_primary_2</item>
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/blu_primary_2</item>
@@ -13,6 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorOnSecondary</item>
         <!-- Customize your theme here. -->
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">@color/blu_primary_2</item>
+
+        <item name="windowSplashScreenIconBackgroundColor">@color/blu_primary_2</item>
+
+        <item name="windowSplashScreenAnimationDuration">3000</item>
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Theme.Blu</item>
     </style>
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">

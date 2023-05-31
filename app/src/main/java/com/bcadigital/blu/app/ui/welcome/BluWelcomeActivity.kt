@@ -1,8 +1,10 @@
 package com.bcadigital.blu.app.ui.welcome
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.bcadigital.blu.app.model.WelcomeCarouselModel
+import com.bcadigital.blu.app.ui.login.unBinding.BluUnBPhoneNumberActivity
 import com.bcadigital.blu.app.ui.welcome.carousel.BluWelcomeAdapter
 import com.bcadigital.blu.databinding.ActivityBluWelcomeBinding
 import com.google.android.material.tabs.TabLayoutMediator
@@ -56,5 +58,9 @@ class BluWelcomeActivity : AppCompatActivity() {
         TabLayoutMediator(binding.tlDotWelcome, binding.vpWelcome) { _, _ ->
 
         }.attach()
+
+        binding.btnStart.setOnClickListener {
+            startActivity(Intent(it.context, BluUnBPhoneNumberActivity::class.java))
+        }
     }
 }

@@ -13,6 +13,16 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
+            android:name=".app.ui.otp.BluOtpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Blu"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".app.ui.login.unBinding.BluUnBPhoneNumberActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Blu"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".app.ui.welcome.BluWelcomeActivity"
             android:exported="false"
             android:theme="@style/Theme.Blu">

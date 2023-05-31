@@ -28,6 +28,6 @@ class BluSplashScreenActivity : AppCompatActivity() {
         handler.postDelayed({
             startActivity(Intent(this, BluWelcomeActivity::class.java))
             finish()
-        },700)
+        },100)
     }
 }

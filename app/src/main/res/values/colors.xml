@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blu_primary_2">#33CDCF</color>
-    <color name="blu_grey_5">#F3F4F6</color>0e761f
-    <color name="blu_green">#0E761F</color>0e761f
+    <color name="blu_grey_5">#F3F4F6</color>
+    <color name="blu_grey_2">#CDCFD2</color>
+    <color name="blu_green">#0E761F</color>
     <color name="blu_primary_1">#283FFF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
