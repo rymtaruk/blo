@@ -52,7 +52,7 @@ class BluUnBPhoneNumberActivity : AppCompatActivity() {
                 binding.pbLoading.visibility = View.GONE
                 binding.btnNext.visibility = View.VISIBLE
                 startActivity(Intent(it.context, BluOtpActivity::class.java))
-            }, 500)
+            }, 250)
         }
     }
 }

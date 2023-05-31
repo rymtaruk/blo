@@ -1,10 +1,12 @@
 package com.bcadigital.blu.app.ui.preLogin
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bcadigital.blu.app.model.CarouselModel
+import com.bcadigital.blu.app.ui.passcode.BluPasscodeActivity
 import com.bcadigital.blu.app.ui.preLogin.card.BluPreLoginCardAdapter
 import com.bcadigital.blu.databinding.ActivityBluPreLoginBinding
 
@@ -31,5 +33,9 @@ class BluPreLoginActivity : AppCompatActivity() {
         carouselModel.add(CarouselModel("","Explore", "Ada 5 promo yang menarik buat kamu","#262260","","",""))
         cardAdapter.items = carouselModel
         binding.vpCard.adapter = cardAdapter
+
+        binding.btnLogin.setOnClickListener {
+            startActivity(Intent(it.context, BluPasscodeActivity::class.java))
+        }
     }
 }

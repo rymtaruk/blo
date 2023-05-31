@@ -41,7 +41,7 @@ class BluWelcomeActivity : AppCompatActivity() {
                 "Atur Keuangan Enaknya Barengan.",
                 "Pakai bluGether, urusan patungan, beres~",
                 "",
-                "#0E761F"
+                "#f3692c"
             )
         )
         items.add(

@@ -28,8 +28,6 @@
         <item name="windowSplashScreenBackground">@color/blu_primary_2</item>
 
         <item name="windowSplashScreenIconBackgroundColor">@color/blu_primary_2</item>
-
-        <item name="windowSplashScreenAnimationDuration">3000</item>
         <!-- Set the theme of the Activity that directly follows your splash screen. -->
         <!-- Required -->
         <item name="postSplashScreenTheme">@style/Theme.Blu</item>

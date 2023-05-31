@@ -1,4 +1,4 @@
-package com.bcadigital.blu.app.tools
+package com.bcadigital.blu.app.utils
 
 import android.view.KeyEvent
 import android.view.View

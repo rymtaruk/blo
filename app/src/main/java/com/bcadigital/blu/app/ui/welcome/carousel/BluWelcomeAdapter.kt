@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bcadigital.blu.R
 import com.bcadigital.blu.app.model.WelcomeCarouselModel
 import com.bcadigital.blu.databinding.ItemBluWelcomeBinding
 
@@ -14,6 +15,7 @@ class BluWelcomeAdapter : RecyclerView.Adapter<BluWelcomeAdapter.ViewHolder>() {
                 field = value
             }
         }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(ItemBluWelcomeBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
@@ -23,6 +25,12 @@ class BluWelcomeAdapter : RecyclerView.Adapter<BluWelcomeAdapter.ViewHolder>() {
         holder.binding.tvTitle.text = data?.title
         holder.binding.tvDescription.text = data?.description
         holder.binding.root.setBackgroundColor(Color.parseColor(data?.backgroundColor))
+
+        when (data?.backgroundColor) {
+            "#33CDCF" -> holder.binding.ivWave.setImageResource(R.drawable.wave_2_primary_grad)
+            "#283FFF" -> holder.binding.ivWave.setImageResource(R.drawable.wave_2_secondary_grad)
+            "#f3692c" -> holder.binding.ivWave.setImageResource(R.drawable.wave_2_quaternary_grad)
+        }
     }
 
     override fun getItemCount(): Int {

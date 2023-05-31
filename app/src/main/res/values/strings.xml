@@ -7,4 +7,5 @@
     <string name="hint_login_no_handphone">No. Handphone</string>
     <string name="btn_next">Lanjut</string>
     <string name="message_otp_verification_number">Verifikasi nomor kamu</string>
+    <string name="passcode_enter_pin">Masukkan PIN</string>
 </resources>

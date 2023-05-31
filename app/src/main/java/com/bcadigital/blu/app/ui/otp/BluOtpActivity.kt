@@ -9,8 +9,8 @@ import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
-import com.bcadigital.blu.app.tools.GenericKeyEvent
-import com.bcadigital.blu.app.tools.GenericTextWatcher
+import com.bcadigital.blu.app.utils.GenericKeyEvent
+import com.bcadigital.blu.app.utils.GenericTextWatcher
 import com.bcadigital.blu.databinding.ActivityBluOtpBinding
 
 class BluOtpActivity : AppCompatActivity() {
@@ -80,7 +80,7 @@ class BluOtpActivity : AppCompatActivity() {
                             binding.llOtp.visibility = View.VISIBLE
 
                             deleteFieldOtp()
-                        }, 1000)
+                        }, 300)
                     }
                 }
             )
