@@ -9,4 +9,10 @@
     <string name="message_otp_verification_number">Verifikasi nomor kamu</string>
     <string name="passcode_enter_pin">Masukkan PIN</string>
     <string name="btn_forgot_password"><u>Lupa Password?</u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_good_day_s">Good Day, %s</string>
+    <string name="lbl_transaction_favorite">Transaksi Favorit</string>
+    <string name="lbl_see_all">lihat semua</string>
+    <string name="lbl_insight">Insight</string>
+    <string name="lbl_tansaction">Transaksi</string>
 </resources>

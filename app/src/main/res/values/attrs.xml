@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BluFavoriteView">
+        <attr name="bfvImage" format="reference|color"/>
+        <attr name="bfvText" format="string"/>
+    </declare-styleable>
+</resources>

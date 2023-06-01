@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.ui.dashboard.home.BluHomeFragment">
+
+    <TextView
+        android:id="@+id/tvAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/bg_button_circle_primary"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:gravity="center"
+        android:text="BM"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/ibChat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:gravity="center"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintEnd_toStartOf="@id/ibNotification"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/ibNotification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:gravity="center"
+        android:src="@drawable/ic_chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/home_good_day_s"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/ibNotification"
+        app:layout_constraintStart_toStartOf="@id/tvAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvAvatar" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabCard"
+        android:layout_width="wrap_content"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <View
+        android:id="@+id/vwLine"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_button_corner_grey_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabCard" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpCard"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_button_corner_grey_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vwLine" />
+
+    <TextView
+        android:id="@+id/tvTransactionFavorite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/lbl_transaction_favorite"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/vpCard"
+        app:layout_constraintTop_toBottomOf="@id/vpCard" />
+
+    <TextView
+        android:id="@+id/tvSeeFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/lbl_see_all"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/vpCard"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/tvTransactionFavorite"
+        app:layout_constraintTop_toBottomOf="@id/vpCard" />
+
+    <LinearLayout
+        android:id="@+id/llFavorite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@id/tvSeeFavorite"
+        app:layout_constraintStart_toStartOf="@id/tvTransactionFavorite"
+        app:layout_constraintTop_toBottomOf="@id/tvTransactionFavorite"
+        tools:itemCount="3"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvInsight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="@string/lbl_insight"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/llFavorite"
+        app:layout_constraintStart_toStartOf="@id/llFavorite"
+        app:layout_constraintTop_toBottomOf="@id/llFavorite" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvInsight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@id/tvInsight"
+        app:layout_constraintStart_toStartOf="@id/tvInsight"
+        app:layout_constraintTop_toBottomOf="@id/tvInsight"
+        tools:itemCount="3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

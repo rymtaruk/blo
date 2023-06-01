@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/bg_button_corner_grey_5">
+
+    <TextView
+        android:id="@+id/tvAccountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="bluAccount "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tvAccountNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvAccountNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="- 0000 0000 0084"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvAccountName"
+        app:layout_constraintEnd_toStartOf="@id/ibCopy"
+        app:layout_constraintStart_toEndOf="@id/tvAccountName"
+        app:layout_constraintTop_toTopOf="@id/tvAccountName"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/ibCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_system_copy"
+        app:layout_constraintBottom_toBottomOf="@id/tvAccountNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAccountNumber"
+        app:layout_constraintTop_toTopOf="@id/tvAccountNumber"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Rp 200.000.000,00 "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/ibMoveAmount"
+        app:layout_constraintEnd_toStartOf="@id/ibSpy"
+        app:layout_constraintStart_toStartOf="@id/tvAccountName"
+        app:layout_constraintTop_toBottomOf="@id/tvAccountName"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/ibSpy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_system_copy"
+        app:layout_constraintBottom_toBottomOf="@id/tvAmount"
+        app:layout_constraintStart_toEndOf="@id/tvAmount"
+        app:layout_constraintTop_toTopOf="@id/tvAmount"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <Button
+        android:id="@+id/ibMoveAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_button_corner_grey"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Pindah Dana"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvAmount"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/ibQris"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_button_corner_grey"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="QRIS"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/ibMoveAmount"
+        app:layout_constraintStart_toEndOf="@id/ibMoveAmount"
+        app:layout_constraintTop_toTopOf="@id/ibMoveAmount"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
