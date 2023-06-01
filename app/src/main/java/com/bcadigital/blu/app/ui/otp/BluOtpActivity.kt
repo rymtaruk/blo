@@ -1,5 +1,6 @@
 package com.bcadigital.blu.app.ui.otp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +10,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import com.bcadigital.blu.app.ui.password.BluPasswordActivity
 import com.bcadigital.blu.app.utils.GenericKeyEvent
 import com.bcadigital.blu.app.utils.GenericTextWatcher
 import com.bcadigital.blu.databinding.ActivityBluOtpBinding
@@ -51,7 +53,7 @@ class BluOtpActivity : AppCompatActivity() {
         })
     }
 
-    fun keyboardListener() {
+    private fun keyboardListener() {
         binding.etOne.addTextChangedListener(GenericTextWatcher(binding.etOne, binding.etTwo, null))
         binding.etTwo.addTextChangedListener(
             GenericTextWatcher(
@@ -79,6 +81,7 @@ class BluOtpActivity : AppCompatActivity() {
                             binding.pbLoading.visibility = View.INVISIBLE
                             binding.llOtp.visibility = View.VISIBLE
 
+                            startActivity(Intent(this@BluOtpActivity, BluPasswordActivity::class.java))
                             deleteFieldOtp()
                         }, 300)
                     }

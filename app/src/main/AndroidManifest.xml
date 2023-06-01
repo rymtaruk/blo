@@ -13,6 +13,11 @@
         android:theme="@style/Theme.App.Starting"
         tools:targetApi="31">
         <activity
+            android:name=".app.ui.password.BluPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Blu"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
             android:name=".app.ui.passcode.BluPasscodeActivity"
             android:exported="false"
             android:theme="@style/Theme.Blu" />
